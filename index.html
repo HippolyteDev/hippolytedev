@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- TODO: remplacer METTRE_TON_DATA_WEBSITE_ID_ICI par ton ID Umami Cloud -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="METTRE_TON_DATA_WEBSITE_ID_ICI"></script>
+  <script defer src="analytics.js"></script>
+  <script defer src="main.js"></script>
+  <title>HippolyteDev — Fullstack React / Next.js / Node</title>
+  <meta name="description" content="Développeur fullstack React / Next.js / Node orienté applications métier, back-offices, auth, RBAC, dashboards et produits web complets.">
+  <meta property="og:title" content="HippolyteDev — Fullstack React / Next.js / Node">
+  <meta property="og:description" content="Applications métier, back-offices, auth, RBAC, dashboards et features fullstack cadrées.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hippolytedev.fr/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Hippolyte Diallo",
+      "alternateName": "HippolyteDev",
+      "jobTitle": "Développeur fullstack React / Next.js / Node",
+      "url": "https://hippolytedev.fr",
+      "sameAs": [
+        "https://github.com/IppoKuun",
+        "https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/"
+      ],
+      "knowsAbout": [
+        "React", "Next.js", "TypeScript", "Node.js", "Express", "Prisma", "PostgreSQL",
+        "Authentication", "RBAC", "Back-office", "Dashboards", "Business logic"
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+<a class="logo logo-mark" href="index.html" aria-label="Accueil HippolyteDev">
+  <img src="image/logo.png" alt="Logo HippolyteDev">
+</a>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="socially.html" >Socially</a>
+        <a href="projects.html">Projets</a>
+        <a href="ia.html">IA & méthode</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="button button-secondary" href="contact.html" data-track="click_nav_contact">Me contacter</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Fullstack product builder</p>
+          <h1 class="h1">Développeur fullstack React / Next.js / Node orienté applications métier.</h1>
+          <p class="lead">Je construis des produits web complets : auth, RBAC, dashboards, back-offices, données, workflows, tests et documentation. Profil adapté aux agences, ESN, studios et équipes produit qui cherchent un renfort sérieux sur des features cadrées.</p>
+          <div class="cta-row">
+            <a href="socially.html" class="button button-primary" data-track="click_hero_socially">Voir Socially</a>
+            <a href="contact.html" class="button button-secondary" data-track="click_hero_contact">Me contacter</a>
+          </div>
+          <div class="proof-list" style="margin-top:28px;">
+            <span class="badge">React</span>
+            <span class="badge">Next.js</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">Auth & RBAC</span>
+            <span class="badge">Back-office</span>
+          </div>
+        </div>
+        <figure class="product-frame">
+          <img src="image/cover.png" alt="Screenshot du feed principal de Socially">
+          <figcaption class="product-frame-caption">Socially — application sociale fullstack avec feed, posts, commentaires, notifications, messagerie et settings.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="card">
+          <p class="eyebrow">Qualification rapide</p>
+          <h2 class="h2">Vous êtes ?</h2>
+          <p class="lead">Sélectionnez votre profil pour indiquer le type de lecture qui vous intéresse. Ce choix sert aussi à mesurer les profils qui visitent le portfolio.</p>
+          <div class="grid-3" style="margin-top:32px;">
+            <button class="card card-hover" data-role="lead-tech" data-track="visitor_role_selected" data-track-role="lead-tech">Lead tech</button>
+            <button class="card card-hover" data-role="rh" data-track="visitor_role_selected" data-track-role="rh">RH / recruteur</button>
+            <button class="card card-hover" data-role="dirigeant" data-track="visitor_role_selected" data-track-role="dirigeant">Dirigeant</button>
+            <button class="card card-hover" data-role="agence" data-track="visitor_role_selected" data-track-role="agence">Agence / studio</button>
+            <button class="card card-hover" data-role="ia" data-track="visitor_role_selected" data-track-role="ia">IA / sourcing</button>
+            <button class="card card-hover" data-role="curieux" data-track="visitor_role_selected" data-track-role="curieux">Curieux</button>
+          </div>
+          <p class="text-muted" data-role-message style="margin-top:24px;">Choisissez un profil pour adapter la lecture.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Ce que je prends en charge</p>
+        <h2 class="h2">Renfort fullstack sur des features produit concrètes.</h2>
+        <div class="grid-4" style="margin-top:40px;">
+          <article class="card"><h3 class="h3">Back-office & dashboards</h3><p class="text-muted">Interfaces admin, tableaux de bord, filtres, vues internes et outils de gestion.</p></article>
+          <article class="card"><h3 class="h3">Auth, rôles & permissions</h3><p class="text-muted">Authentification, sessions, onboarding, RBAC, permissions et logique d’accès.</p></article>
+          <article class="card"><h3 class="h3">Features React / Node</h3><p class="text-muted">Composants, API, validation, persistance, états, erreurs et intégration front/back.</p></article>
+          <article class="card"><h3 class="h3">Reprise d’existant</h3><p class="text-muted">Lecture de codebase, correction de bugs, documentation et livraison vérifiable.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-showcase-dark">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">Projet principal</p>
+          <h2 class="h2">Socially — application sociale fullstack.</h2>
+          <p class="lead">Produit construit end-to-end avec feed, posts, commentaires, notifications, messagerie, settings, logique de données et workflow proche d’une codebase professionnelle.</p>
+          <div class="proof-list" style="margin-top:28px;">
+            <span class="badge">Auth</span><span class="badge">Feed</span><span class="badge">Messaging</span><span class="badge">Notifications</span><span class="badge">Prisma/PostgreSQL</span>
+          </div>
+          <div class="cta-row">
+            <a href="socially.html" class="button button-primary" data-track="click_socially_case_study">Étudier le case study</a>
+            <a href="https://www.socially.rocks/fr/login" target="_blank" rel="noreferrer" class="button button-secondary" data-track="click_socially_live">Tester le site</a>
+          </div>
+        </div>
+        <figure class="product-frame">
+          <img src="image/discover.png" alt="Page Discover de Socially">
+          <figcaption class="product-frame-caption">Discover : catégories, contenus éditoriaux, créateurs et discussions.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Autres preuves</p>
+        <h2 class="h2">Projets secondaires.</h2>
+        <div class="grid-3" style="margin-top:40px;">
+          <article class="card card-hover"><img src="image/elevate-cover.png" alt="Cover du projet Elevate" style="border-radius:16px;margin-bottom:20px;"><h3 class="h3">Elevate</h3><p class="text-muted">Plateforme de formation orientée SaaS avec auth, back-office, RBAC, Stripe, emails, Cloudinary et Prisma/PostgreSQL.</p></article>
+          <article class="card card-hover"><img src="image/nodeshop-cover.png" alt="Cover du projet NodeShop" style="border-radius:16px;margin-bottom:20px;"><h3 class="h3">NodeShop</h3><p class="text-muted">Projet fullstack de consolidation backend : API Express, MongoDB, sessions, validation, rate limiting, audit logs et CRUD.</p></article>
+          <article class="card card-hover"><img src="image/train-rbac-cover.png" alt="Cover du projet Train-RBAC" style="border-radius:16px;margin-bottom:20px;"><h3 class="h3">Train-RBAC</h3><p class="text-muted">Lab orienté staff admin, rôles owner/admin/viewer, permissions, routes protégées et interface de gestion.</p></article>
+        </div>
+        <div class="cta-row"><a href="projects.html" class="button button-secondary" data-track="click_projects">Voir tous les projets</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section-sm section-dark">
+    <div class="container grid-2">
+      <div>
+        <p class="eyebrow">HippolyteDev</p>
+        <h2 class="h2">Développeur fullstack orienté produit.</h2>
+        <p class="lead">React / Next.js / Node — applications métier, back-offices, auth, RBAC, dashboards et produits web complets.</p>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,.04);border-color:rgba(148,163,184,.25);">
+        <h3 class="h3">Liens</h3>
+        <p class="text-muted"><a href="mailto:hippolytedev@gmail.com" data-track="click_email">hippolytedev@gmail.com</a></p>
+        <p class="text-muted"><a href="https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/" target="_blank" rel="noreferrer" data-track="click_linkedin">LinkedIn</a></p>
+        <p class="text-muted"><a href="https://github.com/IppoKuun" target="_blank" rel="noreferrer" data-track="click_github">GitHub</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

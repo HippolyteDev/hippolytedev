@@ -1,0 +1,14 @@
+# HippolyteDev
+
+Portfolio de Hippolyte Diallo, développeur fullstack React / Next.js / Node orienté applications métier, back-offices, auth, RBAC, dashboards et produits web complets.
+
+Pages principales :
+- https://hippolytedev.fr/ — profil, positionnement et projets
+- https://hippolytedev.fr/socially.html — case study Socially
+- https://hippolytedev.fr/projects.html — projets sélectionnés
+- https://hippolytedev.fr/ia.html — méthode de travail avec l’IA
+- https://hippolytedev.fr/contact.html — contact
+
+Liens :
+- GitHub : https://github.com/IppoKuun
+- LinkedIn : https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/

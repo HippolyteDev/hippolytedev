@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- TODO: remplacer METTRE_TON_DATA_WEBSITE_ID_ICI par ton ID Umami Cloud -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="METTRE_TON_DATA_WEBSITE_ID_ICI"></script>
+  <script defer src="analytics.js"></script>
+  <script defer src="main.js"></script>
+  <title>Socially — Case study | HippolyteDev</title>
+  <meta name="description" content="Case study Socially : application sociale fullstack avec feed, posts, commentaires, notifications, messagerie, settings et workflow produit.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Accueil HippolyteDev">
+        <img src="image/logo.png" alt="Logo HippolyteDev" style="height:32px;width:auto;">
+      </a>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="socially.html" aria-current="page" >Socially</a>
+        <a href="projects.html">Projets</a>
+        <a href="ia.html">IA & méthode</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="button button-secondary" href="contact.html" data-track="click_nav_contact">Me contacter</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Case study principal</p>
+          <h1 class="h1">Socially — application sociale fullstack construite end-to-end.</h1>
+          <p class="lead">Socially est mon projet principal : une application sociale avec feed, posts, commentaires, notifications, messagerie, settings et logique produit. Le back-office de modération est en cours de construction et sera ajouté au case study une fois stabilisé.</p>
+          <div class="cta-row">
+            <a class="button button-primary" href="https://www.socially.rocks/fr/login" target="_blank" rel="noreferrer" data-track="click_socially_live">Tester le site</a>
+            <a class="button button-secondary" href="https://github.com/IppoKuun/socially" target="_blank" rel="noreferrer" data-track="click_socially_repo">Voir le code</a>
+          </div>
+        </div>
+        <figure class="product-frame"><img src="image/cover.png" alt="Feed principal de Socially"><figcaption class="product-frame-caption">Feed principal avec posts, interactions et création de contenu.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Ce que le projet prouve</p>
+        <h2 class="h2">Un produit social complet, pas une simple interface.</h2>
+        <div class="grid-3" style="margin-top:40px;">
+          <article class="card"><h3 class="h3">Produit & flows</h3><p class="text-muted">Feed, découverte, posts, commentaires, notifications, messagerie et settings utilisateur.</p></article>
+          <article class="card"><h3 class="h3">Fullstack</h3><p class="text-muted">Logique de données, relations, API, intégration front/back, auth et persistance PostgreSQL.</p></article>
+          <article class="card"><h3 class="h3">Workflow</h3><p class="text-muted">Approche proche agence : tickets, PR, arbitrages, README, limites connues et amélioration continue.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-showcase-dark">
+      <div class="container">
+        <p class="eyebrow">Screenshots réels</p>
+        <h2 class="h2">Les surfaces principales de Socially.</h2>
+        <p class="lead">Captures du front-office utilisateur : feed, discover, création de post, commentaires, notifications, messagerie, profil et settings.</p>
+        <div class="screenshot-grid">
+          <figure class="product-frame"><img src="image/cover.png" alt="Feed principal de Socially"><figcaption class="product-frame-caption">Feed principal : posts, interactions, onglets For You / Following et CTA de création.</figcaption></figure>
+          <figure class="product-frame"><img src="image/discover.png" alt="Page Discover de Socially"><figcaption class="product-frame-caption">Discover : surfaces de découverte, catégories et créateurs.</figcaption></figure>
+          <figure class="product-frame"><img src="image/post-detail.png" alt="Détail d’un post Socially"><figcaption class="product-frame-caption">Détail post : page dédiée, interactions et commentaires associés.</figcaption></figure>
+          <figure class="product-frame"><img src="image/create-post.png" alt="Modale de création de post Socially"><figcaption class="product-frame-caption">Création de post : titre, contenu, images, validation et gestion d’états.</figcaption></figure>
+          <figure class="product-frame"><img src="image/comment.png" alt="Commentaires sur Socially"><figcaption class="product-frame-caption">Commentaires : réponses, tri et interactions sur une discussion.</figcaption></figure>
+          <figure class="product-frame"><img src="image/notifications.png" alt="Notifications Socially"><figcaption class="product-frame-caption">Notifications : activités liées au compte, likes, commentaires et abonnements.</figcaption></figure>
+          <figure class="product-frame"><img src="image/messages.png" alt="Messagerie Socially"><figcaption class="product-frame-caption">Messagerie : conversations privées, liste de contacts et espace de discussion.</figcaption></figure>
+          <figure class="product-frame"><img src="image/settings.png" alt="Settings Socially"><figcaption class="product-frame-caption">Settings : compte, confidentialité, données et documents légaux.</figcaption></figure>
+          <figure class="product-frame"><img src="image/profile.png" alt="Profil utilisateur Socially"><figcaption class="product-frame-caption">Profil : identité utilisateur, handle, avatar et contenus associés.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div><p class="eyebrow">Développement assisté par IA</p><h2 class="h2">Une utilisation cadrée, pas un remplacement du raisonnement.</h2><p class="lead">Sur certains flows, l’IA a été utilisée pour accélérer la compréhension de patterns avancés, comparer des approches d’intégration et produire de premières implémentations cadrées.</p></div>
+        <div class="card"><h3 class="h3">Contrôle développeur</h3><p class="text-muted">La responsabilité restait côté développeur : cadrage du scope, adaptation au contexte existant, review, tests, correction des effets de bord et validation finale. L’IA n’a pas été traitée comme source de vérité.</p><div class="cta-row"><a href="ia.html" class="button button-secondary" data-track="click_ai_method_from_socially">Lire ma méthode IA</a></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="section-sm section-dark">
+    <div class="container grid-2">
+      <div>
+        <p class="eyebrow">HippolyteDev</p>
+        <h2 class="h2">Développeur fullstack orienté produit.</h2>
+        <p class="lead">React / Next.js / Node — applications métier, back-offices, auth, RBAC, dashboards et produits web complets.</p>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,.04);border-color:rgba(148,163,184,.25);">
+        <h3 class="h3">Liens</h3>
+        <p class="text-muted"><a href="mailto:hippolytedev@gmail.com" data-track="click_email">hippolytedev@gmail.com</a></p>
+        <p class="text-muted"><a href="https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/" target="_blank" rel="noreferrer" data-track="click_linkedin">LinkedIn</a></p>
+        <p class="text-muted"><a href="https://github.com/IppoKuun" target="_blank" rel="noreferrer" data-track="click_github">GitHub</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

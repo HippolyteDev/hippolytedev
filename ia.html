@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- TODO: remplacer METTRE_TON_DATA_WEBSITE_ID_ICI par ton ID Umami Cloud -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="METTRE_TON_DATA_WEBSITE_ID_ICI"></script>
+  <script defer src="analytics.js"></script>
+  <script defer src="main.js"></script>
+  <title>Ma méthode de travail avec l’IA — HippolyteDev</title>
+  <meta name="description" content="Comment j’utilise l’IA comme assistant d’exploration, de comparaison d’approches, d’implémentation cadrée et de revue, sans déléguer la décision produit ni la validation finale.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Accueil HippolyteDev">
+        <img src="image/logo.png" alt="Logo HippolyteDev" style="height:32px;width:auto;">
+      </a>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="socially.html">Socially</a>
+        <a href="projects.html">Projets</a>
+        <a href="ia.html" aria-current="page" >IA & méthode</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="button button-secondary" href="contact.html" data-track="click_nav_contact">Me contacter</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero"><div class="container"><p class="eyebrow">AI-assisted engineering</p><h1 class="h1">Ma méthode de travail avec l’IA.</h1><p class="lead">J’utilise l’IA comme assistant d’exploration, de comparaison d’approches et d’implémentation cadrée, sans lui déléguer la décision produit ni la validation finale.</p></div></section>
+
+    <section class="section-sm"><div class="container grid-3">
+      <article class="card"><h2 class="h3">Principe général</h2><p class="text-muted">L’IA devient utile quand elle reçoit du contexte, des contraintes, un scope clair et une boucle de validation. Elle ne remplace pas la compréhension technique.</p></article>
+      <article class="card"><h2 class="h3">Quand je l’utilise</h2><p class="text-muted">Patterns avancés, comparaison d’approches, refactors mécaniques, i18n, skeletons, documentation, tests après stabilisation et petites tâches locales.</p></article>
+      <article class="card"><h2 class="h3">Quand je ne délègue pas</h2><p class="text-muted">Décision produit, arbitrage d’architecture, validation finale, compréhension métier, review critique et responsabilité de l’intégration.</p></article>
+    </div></section>
+
+    <section class="section"><div class="container grid-2"><div><p class="eyebrow">Codebase existante</p><h2 class="h2">Travailler avec du contexte partiel.</h2><p class="lead">Dans une vraie codebase, on ne maîtrise pas toujours immédiatement tout l’historique, toutes les conventions et toutes les dépendances d’un flow. J’utilise donc l’IA comme outil d’exploration cadrée : résumer un flow, identifier les fichiers liés, comparer plusieurs options d’intégration, puis produire une première implémentation compatible avec les patterns existants.</p></div><div class="card"><h3 class="h3">Contrôle final</h3><p class="text-muted">Cette méthode accélère l’orientation, mais ne remplace pas la review : je vérifie les hypothèses, adapte le code, contrôle les effets de bord, teste le comportement et documente les limites.</p></div></div></section>
+
+    <section class="section-sm section-dark"><div class="container"><p class="eyebrow">Exemples Socially</p><h2 class="h2">Des cas d’usage cadrés.</h2><div class="grid-3" style="margin-top:40px;">
+      <article class="card" style="background:rgba(255,255,255,.04);border-color:rgba(148,163,184,.25);"><h3 class="h3">Patterns avancés</h3><p class="text-muted">Feed, data fetching client, pagination infinie, optimistic UI et intégration de nouvelles librairies dans une vraie UI.</p></article>
+      <article class="card" style="background:rgba(255,255,255,.04);border-color:rgba(148,163,184,.25);"><h3 class="h3">Flows spécifiques</h3><p class="text-muted">Création de post avec validation client, drag & drop, upload multiple, gestion d’états et erreurs.</p></article>
+      <article class="card" style="background:rgba(255,255,255,.04);border-color:rgba(148,163,184,.25);"><h3 class="h3">Tâches contraintes</h3><p class="text-muted">i18n, SEO de fin de projet, skeletons, harmonisation UI, documentation dérivée du code et refactors mécaniques.</p></article>
+    </div></div></section>
+
+    <section class="section"><div class="container"><p class="eyebrow">Méthode</p><h2 class="h2">Cadrer, challenger, intégrer, valider.</h2><div class="grid-4" style="margin-top:40px;">
+      <article class="card"><h3 class="h3">1. Cadrer</h3><p class="text-muted">Définir le scope, les contraintes, les fichiers concernés et le résultat attendu.</p></article>
+      <article class="card"><h3 class="h3">2. Comparer</h3><p class="text-muted">Demander plusieurs approches, identifier les compromis et choisir l’option cohérente.</p></article>
+      <article class="card"><h3 class="h3">3. Intégrer</h3><p class="text-muted">Adapter au code existant, aux conventions du projet et aux contraintes produit.</p></article>
+      <article class="card"><h3 class="h3">4. Valider</h3><p class="text-muted">Relire, tester, corriger, documenter et garder la responsabilité finale.</p></article>
+    </div></div></section>
+  </main>
+  <footer class="section-sm section-dark">
+    <div class="container grid-2">
+      <div>
+        <p class="eyebrow">HippolyteDev</p>
+        <h2 class="h2">Développeur fullstack orienté produit.</h2>
+        <p class="lead">React / Next.js / Node — applications métier, back-offices, auth, RBAC, dashboards et produits web complets.</p>
+      </div>
+      <div class="card" style="background:rgba(255,255,255,.04);border-color:rgba(148,163,184,.25);">
+        <h3 class="h3">Liens</h3>
+        <p class="text-muted"><a href="mailto:hippolytedev@gmail.com" data-track="click_email">hippolytedev@gmail.com</a></p>
+        <p class="text-muted"><a href="https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/" target="_blank" rel="noreferrer" data-track="click_linkedin">LinkedIn</a></p>
+        <p class="text-muted"><a href="https://github.com/IppoKuun" target="_blank" rel="noreferrer" data-track="click_github">GitHub</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
