@@ -293,6 +293,27 @@ button:focus-visible {
   color: var(--color-primary);
 }
 
+.icon-box svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.card > .icon-box {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+button.card {
+  width: 100%;
+  color: inherit;
+  text-align: left;
+}
+
 .proof-list {
   display: flex;
   flex-wrap: wrap;
