@@ -347,37 +347,38 @@ button.card {
   min-height: 72px;
 }
 
-.site-logo {
-  height: 44px;
-  width: auto;
-  display: block;
-  border-radius: full;
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: max-content;
+  color: var(--color-text);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
 }
 
-.logo-mark {
-  display: flex;
+.logo-icon {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
-}
-
-.logo-mark img {
-  width: 56px;
-  height: 56px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-
-
-.logo {
-  font-weight: 800;
-  letter-spacing: -0.04em;
-}
-
-.logo-dot {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: #ffffff;
   color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.logo-icon svg {
+  width: 21px;
+  height: 21px;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .nav-links {
