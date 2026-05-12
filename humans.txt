@@ -2,6 +2,6 @@ HippolyteDev
 Développeur fullstack React / Next.js / Node
 
 Portfolio statique HTML / CSS / JS.
-Contact : hippolytedev@gmail.com
+Contact : hippolyte.devweb@gmail.com
 GitHub : https://github.com/IppoKuun
 LinkedIn : https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/
