@@ -3,5 +3,5 @@ Développeur fullstack React / Next.js / Node
 
 Portfolio statique HTML / CSS / JS.
 Contact : hippolyte.devweb@gmail.com
-GitHub : https://github.com/IppoKuun
+GitHub : https://github.com/HippolyteDev
 LinkedIn : https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/

@@ -10,5 +10,5 @@ Pages principales :
 - https://hippolytedev.fr/contact.html — contact
 
 Liens :
-- GitHub : https://github.com/IppoKuun
+- GitHub : https://github.com/HippolyteDev
 - LinkedIn : https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/
