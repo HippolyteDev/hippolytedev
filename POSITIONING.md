@@ -1,6 +1,7 @@
 # Portfolio Context
 
 ## Profile
+
 I am a self-taught fullstack web developer in a gap year, building a freelance B2B profile.
 
 My goal is not to sell generic websites or landing pages. I want to be positioned as a fullstack React / Next.js / Node.js developer focused on business applications, secure product features, dashboards, back-offices, auth/RBAC, APIs, workflows, and complete web products.
@@ -8,7 +9,9 @@ My goal is not to sell generic websites or landing pages. I want to be positione
 I do not have a first professional client reference yet, so the portfolio must reduce perceived risk by showing strong project evidence, clear technical choices, code quality, Git workflow, documentation, and production deployment.
 
 ## Target audience
+
 The portfolio targets:
+
 - agencies
 - ESN
 - web/product studios
@@ -18,11 +21,13 @@ The portfolio targets:
 The portfolio should not target low-value showcase websites.
 
 ## Positioning
+
 Main positioning:
 
 Fullstack React / Next.js / Node.js developer focused on business applications and complete product features.
 
 I can contribute to:
+
 - backlog reinforcement
 - existing codebase improvements
 - back-office features
@@ -36,7 +41,9 @@ I can contribute to:
 - fullstack features with clear scope
 
 ## Stack
+
 Current stack:
+
 - React
 - Next.js
 - TypeScript
@@ -52,7 +59,9 @@ Current stack:
 - CI basics
 
 ## Tone
+
 The tone must be:
+
 - credible
 - concrete
 - direct
@@ -62,6 +71,7 @@ The tone must be:
 - not fake senior
 
 Avoid:
+
 - “passionate junior developer”
 - “CEO / founder”
 - “AI-built developer”
@@ -69,6 +79,7 @@ Avoid:
 - vague claims without proof
 
 Use instead:
+
 - “fullstack product builder”
 - “creator of Socially”
 - “React / Next.js / Node.js developer”

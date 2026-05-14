@@ -1,64 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <!-- TODO: remplacer METTRE_TON_DATA_WEBSITE_ID_ICI par ton ID Umami Cloud -->
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="METTRE_TON_DATA_WEBSITE_ID_ICI"></script>
-  <script defer src="analytics.js"></script>
-  <script defer src="main.js"></script>
-  <title>Contact — HippolyteDev</title>
-  <meta name="description" content="Contacter HippolyteDev pour échanger autour de React, Next.js, Node, back-office, auth, RBAC, dashboards et applications métier.">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="index.html" aria-label="Accueil HippolyteDev">
-        <span class="logo-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24">
-            <path d="m8 8-4 4 4 4"></path>
-            <path d="m16 8 4 4-4 4"></path>
-            <path d="m14 4-4 16"></path>
-          </svg>
-        </span>
-        <span>HippolyteDev</span>
-      </a>
-      <nav class="nav-links" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a>
-        <a href="socially.html">Socially</a>
-        <a href="projects.html">Projets</a>
-        <a href="ia.html">IA & méthode</a>
-        <a href="contact.html" aria-current="page" >Contact</a>
-      </nav>
-      <a class="button button-secondary" href="contact.html" data-track="click_nav_contact">Me contacter</a>
-    </div>
-  </header>
-  <main>
-    <section class="hero"><div class="container"><p class="eyebrow">Contact</p><h1 class="h1">Échanger autour d’un besoin React / Next.js / Node.</h1><p class="lead">Contact simple : email, LinkedIn ou GitHub. Je réponds plus facilement aux demandes cadrées avec contexte, stack, objectif et type de feature.</p></div></section>
-
-    <section class="section-sm"><div class="container grid-3">
-      <a class="card card-hover" href="mailto:hippolyte.devweb@gmail.com" data-track="click_email_contact"><div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></div><h2 class="h3">Email</h2><p class="text-muted">hippolyte.devweb@gmail.com</p></a>
-      <a class="card card-hover" href="https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/" target="_blank" rel="noreferrer" data-track="click_linkedin_contact"><div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect></svg></div><h2 class="h3">LinkedIn</h2><p class="text-muted">Profil professionnel, échanges et prospection.</p></a>
-      <a class="card card-hover" href="https://github.com/HippolyteDev" target="_blank" rel="noreferrer" data-track="click_github_contact"><div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4"></path><path d="m16 8 4 4-4 4"></path><circle cx="12" cy="12" r="1"></circle><path d="M12 13v6"></path><path d="M9 19h6"></path></svg></div><h2 class="h3">GitHub</h2><p class="text-muted">Repos, projets, code et preuves techniques.</p></a>
-    </div></section>
-
-    <section class="section"><div class="container grid-2"><div><p class="eyebrow">Pour faciliter l’échange</p><h2 class="h2">Le contexte utile à envoyer.</h2></div><div class="card"><p class="text-muted">Dans un premier message, le plus utile est d’indiquer : le type de projet, la stack, le besoin concret, l’état de la codebase et les livrables attendus.</p><div class="proof-list" style="margin-top:24px;"><span class="badge">Back-office</span><span class="badge">Auth/RBAC</span><span class="badge">Dashboard</span><span class="badge">Feature fullstack</span><span class="badge">Reprise d’existant</span></div></div></div></section>
-  </main>
-  <footer class="section-sm section-dark">
-    <div class="container grid-2">
-      <div>
-        <p class="eyebrow">HippolyteDev</p>
-        <h2 class="h2">Développeur fullstack orienté produit.</h2>
-        <p class="lead">React / Next.js / Node — applications métier, back-offices, auth, RBAC, dashboards et produits web complets.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- TODO: remplacer METTRE_TON_DATA_WEBSITE_ID_ICI par ton ID Umami Cloud -->
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="METTRE_TON_DATA_WEBSITE_ID_ICI"
+    ></script>
+    <script defer src="analytics.js"></script>
+    <script defer src="main.js"></script>
+    <title>Contact — HippolyteDev</title>
+    <meta
+      name="description"
+      content="Contacter HippolyteDev pour échanger autour de React, Next.js, Node, back-office, auth, RBAC, dashboards et applications métier."
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html" aria-label="Accueil HippolyteDev">
+          <span class="logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="m8 8-4 4 4 4"></path>
+              <path d="m16 8 4 4-4 4"></path>
+              <path d="m14 4-4 16"></path>
+            </svg>
+          </span>
+          <span>HippolyteDev</span>
+        </a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="socially.html">Socially</a>
+          <a href="projects.html">Projets</a>
+          <a href="workflow.html">Workflow</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+        <a class="button button-secondary" href="contact.html" data-track="click_nav_contact"
+          >Me contacter</a
+        >
       </div>
-      <div class="card" style="background:rgba(255,255,255,.04);border-color:rgba(148,163,184,.25);">
-        <h3 class="h3">Liens</h3>
-        <p class="text-muted"><a href="mailto:hippolyte.devweb@gmail.com" data-track="click_email">hippolyte.devweb@gmail.com</a></p>
-        <p class="text-muted"><a href="https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/" target="_blank" rel="noreferrer" data-track="click_linkedin">LinkedIn</a></p>
-        <p class="text-muted"><a href="https://github.com/HippolyteDev" target="_blank" rel="noreferrer" data-track="click_github">GitHub</a></p>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1 class="h1">Échanger autour d’un besoin React / Next.js / Node.</h1>
+          <p class="lead">
+            Contact simple : email, LinkedIn ou GitHub. Je réponds plus facilement aux demandes
+            cadrées avec contexte, stack, objectif et type de feature.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container grid-3">
+          <a
+            class="card card-hover"
+            href="mailto:hippolyte.devweb@gmail.com"
+            data-track="click_email_contact"
+            ><div class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="m3 7 9 6 9-6"></path>
+              </svg>
+            </div>
+            <h2 class="h3">Email</h2>
+            <p class="text-muted">hippolyte.devweb@gmail.com</p></a
+          >
+          <a
+            class="card card-hover"
+            href="https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/"
+            target="_blank"
+            rel="noreferrer"
+            data-track="click_linkedin_contact"
+            ><div class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 7h10v10"></path>
+                <path d="M7 17 17 7"></path>
+                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+              </svg>
+            </div>
+            <h2 class="h3">LinkedIn</h2>
+            <p class="text-muted">Profil professionnel, échanges et prospection.</p></a
+          >
+          <a
+            class="card card-hover"
+            href="https://github.com/HippolyteDev"
+            target="_blank"
+            rel="noreferrer"
+            data-track="click_github_contact"
+            ><div class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="m8 8-4 4 4 4"></path>
+                <path d="m16 8 4 4-4 4"></path>
+                <circle cx="12" cy="12" r="1"></circle>
+                <path d="M12 13v6"></path>
+                <path d="M9 19h6"></path>
+              </svg>
+            </div>
+            <h2 class="h3">GitHub</h2>
+            <p class="text-muted">Repos, projets, code et preuves techniques.</p></a
+          >
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid-2">
+          <div>
+            <p class="eyebrow">Pour faciliter l’échange</p>
+            <h2 class="h2">Le contexte utile à envoyer.</h2>
+          </div>
+          <div class="card">
+            <p class="text-muted">
+              Dans un premier message, le plus utile est d’indiquer : le type de projet, la stack,
+              le besoin concret, l’état de la codebase et les livrables attendus.
+            </p>
+            <div class="proof-list" style="margin-top: 24px">
+              <span class="badge">Back-office</span><span class="badge">Auth/RBAC</span
+              ><span class="badge">Dashboard</span><span class="badge">Feature fullstack</span
+              ><span class="badge">Reprise d’existant</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section-sm section-dark">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">HippolyteDev</p>
+          <h2 class="h2">Développeur fullstack orienté produit.</h2>
+          <p class="lead">
+            React / Next.js / Node — applications métier, back-offices, auth, RBAC, dashboards et
+            produits web complets.
+          </p>
+        </div>
+        <div
+          class="card"
+          style="background: rgba(255, 255, 255, 0.04); border-color: rgba(148, 163, 184, 0.25)"
+        >
+          <h3 class="h3">Liens</h3>
+          <p class="text-muted">
+            <a href="mailto:hippolyte.devweb@gmail.com" data-track="click_email"
+              >hippolyte.devweb@gmail.com</a
+            >
+          </p>
+          <p class="text-muted">
+            <a
+              href="https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/"
+              target="_blank"
+              rel="noreferrer"
+              data-track="click_linkedin"
+              >LinkedIn</a
+            >
+          </p>
+          <p class="text-muted">
+            <a
+              href="https://github.com/HippolyteDev"
+              target="_blank"
+              rel="noreferrer"
+              data-track="click_github"
+              >GitHub</a
+            >
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- TODO: remplacer METTRE_TON_DATA_WEBSITE_ID_ICI par ton ID Umami Cloud -->
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="METTRE_TON_DATA_WEBSITE_ID_ICI"
+    ></script>
+    <script defer src="analytics.js"></script>
+    <script defer src="main.js"></script>
+    <title>Workflow agence — HippolyteDev</title>
+    <meta
+      name="description"
+      content="Ma méthode de travail proche agence : tickets, branches Git, commits lisibles, pull requests, reviews, CI, tests, corrections et documentation."
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html" aria-label="Accueil HippolyteDev">
+          <span class="logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="m8 8-4 4 4 4"></path>
+              <path d="m16 8 4 4-4 4"></path>
+              <path d="m14 4-4 16"></path>
+            </svg>
+          </span>
+          <span>HippolyteDev</span>
+        </a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="socially.html">Socially</a>
+          <a href="projects.html">Projets</a>
+          <a href="workflow.html" aria-current="page">Workflow</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a class="button button-secondary" href="contact.html" data-track="click_nav_contact"
+          >Me contacter</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Workflow agence</p>
+          <h1 class="h1">Une méthode de travail proche d’une équipe produit.</h1>
+          <p class="lead">
+            N’ayant pas encore d’expérience agence réelle, j’ai volontairement construit mes projets
+            avec une méthode proche des conditions d’équipe : tickets, branches Git, commits
+            lisibles, pull requests, reviews, CI, tests, documentation et corrections itératives.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container grid-3">
+          <article class="card">
+            <h2 class="h3">Pas seulement coder</h2>
+            <p class="text-muted">
+              Je m’entraîne à livrer une tâche complète : comprendre le besoin, isoler le
+              changement, vérifier les effets de bord et produire une livraison relisible.
+            </p>
+          </article>
+          <article class="card">
+            <h2 class="h3">Réduire le risque</h2>
+            <p class="text-muted">
+              L’objectif est de rendre mon travail lisible et vérifiable : scope clair, commits
+              propres, PR documentées, checks, captures et limites connues.
+            </p>
+          </article>
+          <article class="card">
+            <h2 class="h3">M’intégrer à une équipe</h2>
+            <p class="text-muted">
+              Je travaille ma capacité à rejoindre un workflow déjà en place : conventions Git,
+              tickets, branches, PR, review, CI, standards qualité et documentation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid-2">
+          <div>
+            <p class="eyebrow">Review simulée</p>
+            <h2 class="h2">Travailler avec une contrainte externe.</h2>
+            <p class="lead">
+              J’ai utilisé l’IA comme support pour reproduire une partie du cadre d’équipe :
+              première implémentation cadrée, revue de PR avec Codex Review, conversations à
+              résoudre, demandes de correction et checks à relancer avant de considérer une tâche
+              acceptable.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="h3">Codebase existante</h3>
+            <p class="text-muted">
+              Ce travail m’a entraîné à intervenir sur du code que je ne maîtrise pas immédiatement,
+              à respecter les patterns existants, à corriger une implémentation proposée, à
+              justifier mes choix et à intégrer mes changements.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow">Méthode appliquée</p>
+          <h2 class="h2">Le workflow que je reproduis sur mes projets.</h2>
+          <div class="grid-4" style="margin-top: 40px">
+            <article class="card">
+              <h3 class="h3">1. Ticket</h3>
+              <p class="text-muted">
+                Une tâche part d’un besoin cadré : objectif, scope, fichiers probables, risques et
+                critères de validation.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">2. Branche</h3>
+              <p class="text-muted">
+                Chaque sujet est isolé dans une branche thématique pour éviter les changements
+                mélangés et garder une lecture claire.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">3. Commit</h3>
+              <p class="text-muted">
+                Je vise un commit = une intention, avec un message compréhensible et un diff qui
+                raconte une étape précise.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">4. Pull request</h3>
+              <p class="text-muted">
+                La PR sert à relire le changement comme une livraison : contexte, impact, risques,
+                choix techniques et vérifications.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">5. Review</h3>
+              <p class="text-muted">
+                Je challenge la logique métier, la sécurité, les edge cases, la maintenabilité et
+                les effets de bord possibles.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">6. CI & tests</h3>
+              <p class="text-muted">
+                Les checks pertinents doivent passer : lint, typecheck, tests ciblés ou validation
+                manuelle selon le risque du changement.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">7. Corrections</h3>
+              <p class="text-muted">
+                Une review n’est pas décorative : je reprends les points faibles, simplifie ce qui
+                doit l’être et relance les vérifications.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">8. Documentation</h3>
+              <p class="text-muted">
+                Je documente les décisions importantes, les limites connues et les points à
+                reprendre quand cela aide la maintenance.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm section-dark">
+        <div class="container grid-2">
+          <div>
+            <p class="eyebrow">Cas concret</p>
+            <h2 class="h2">Socially comme terrain d’entraînement principal.</h2>
+            <p class="lead">
+              Socially m’a permis de pratiquer ce workflow sur une vraie codebase fullstack : auth,
+              onboarding, feed, posts, commentaires, notifications, messagerie, settings,
+              Prisma/PostgreSQL, tests et documentation.
+            </p>
+          </div>
+          <div
+            class="card"
+            style="background: rgba(255, 255, 255, 0.04); border-color: rgba(148, 163, 184, 0.25)"
+          >
+            <h3 class="h3">Ce que j’ai travaillé</h3>
+            <p class="text-muted">
+              Tickets Linear, branches par ticket, commits structurés, pull requests, reviews,
+              corrections post-review, checks CI/CD, tests ciblés, README, documentation et suivi
+              des limites produit.
+            </p>
+            <div class="cta-row">
+              <a
+                href="socially.html"
+                class="button button-secondary"
+                data-track="click_workflow_socially_case_study"
+                >Voir le case study Socially</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <p class="eyebrow">Standards personnels</p>
+          <h2 class="h2">Ce que je cherche à rendre vérifiable.</h2>
+          <div class="grid-3" style="margin-top: 40px">
+            <article class="card">
+              <h3 class="h3">Changements isolés</h3>
+              <p class="text-muted">
+                Limiter le scope d’une tâche pour faciliter la review et éviter les refactors cachés
+                dans une feature.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">Décisions explicites</h3>
+              <p class="text-muted">
+                Expliquer les compromis techniques quand un choix peut avoir un impact produit,
+                sécurité ou maintenance.
+              </p>
+            </article>
+            <article class="card">
+              <h3 class="h3">Validation concrète</h3>
+              <p class="text-muted">
+                Ne pas considérer une tâche terminée uniquement parce que le code compile : vérifier
+                le comportement attendu.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section-sm section-dark">
+      <div class="container grid-2">
+        <div>
+          <p class="eyebrow">HippolyteDev</p>
+          <h2 class="h2">Développeur fullstack orienté produit.</h2>
+          <p class="lead">
+            React / Next.js / Node — applications métier, back-offices, auth, RBAC, dashboards et
+            produits web complets.
+          </p>
+        </div>
+        <div
+          class="card"
+          style="background: rgba(255, 255, 255, 0.04); border-color: rgba(148, 163, 184, 0.25)"
+        >
+          <h3 class="h3">Liens</h3>
+          <p class="text-muted">
+            <a href="mailto:hippolyte.devweb@gmail.com" data-track="click_email"
+              >hippolyte.devweb@gmail.com</a
+            >
+          </p>
+          <p class="text-muted">
+            <a
+              href="https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/"
+              target="_blank"
+              rel="noreferrer"
+              data-track="click_linkedin"
+              >LinkedIn</a
+            >
+          </p>
+          <p class="text-muted">
+            <a
+              href="https://github.com/HippolyteDev"
+              target="_blank"
+              rel="noreferrer"
+              data-track="click_github"
+              >GitHub</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
