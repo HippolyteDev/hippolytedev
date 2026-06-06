@@ -4,21 +4,18 @@
 
 I am a self-taught fullstack web developer in a gap year, building a freelance B2B profile.
 
-My goal is not to sell generic websites or landing pages. I want to be positioned as a fullstack React / Next.js / Node.js developer focused on business applications, secure product features, dashboards, back-offices, auth/RBAC, APIs, workflows, and complete web products.
+The portfolio must position me as a serious advanced project-based fullstack React / Next.js / Node.js developer. It must not present me as a senior developer, CEO/founder, or AI-generated/vibe-coding developer.
 
-I do not have a first professional client reference yet, so the portfolio must reduce perceived risk by showing strong project evidence, clear technical choices, code quality, Git workflow, documentation, and production deployment.
+Socially is the main proof of skill: a complete fullstack product with real screens, user flows, data, authentication, messaging, notifications, settings and ongoing back-office work.
 
-## Target audience
+## Target Audiences
 
-The portfolio targets:
+The portfolio now has two audience modes:
 
-- agencies
-- ESN
-- web/product studios
-- small product teams
-- CTOs / lead developers looking for React / Next.js / Node reinforcement
+- **Team / agency view**: agencies, ESN, product studios, small product teams, CTOs, lead developers and recruiters looking for React / Next.js / Node reinforcement.
+- **Direct client view**: founders, small companies, independents and business teams that need a concrete web application, internal tool, client portal, dashboard, workflow or MVP.
 
-The portfolio should not target low-value showcase websites.
+The agency/team view can use technical language. The direct client view must avoid jargon and explain value in simple business terms.
 
 ## Positioning
 
@@ -26,7 +23,7 @@ Main positioning:
 
 Fullstack React / Next.js / Node.js developer focused on business applications and complete product features.
 
-I can contribute to:
+For team / agency visitors, I can contribute to:
 
 - backlog reinforcement
 - existing codebase improvements
@@ -39,6 +36,17 @@ I can contribute to:
 - bugfixes
 - documentation
 - fullstack features with clear scope
+
+For direct clients, I can build:
+
+- internal tools
+- client portals
+- dashboards
+- private account areas
+- workflow tools
+- admin panels
+- MVPs for a specific business process
+- improvements to an existing web application
 
 ## Stack
 
@@ -54,6 +62,7 @@ Current stack:
 - Better Auth
 - Tailwind CSS
 - Vercel
+- Neon Postgres
 - Git / GitHub
 - tests
 - CI basics
@@ -66,6 +75,7 @@ The tone must be:
 - concrete
 - direct
 - professional
+- readable by recruiters, agencies and non-technical clients
 - not overhyped
 - not too junior
 - not fake senior
@@ -75,8 +85,10 @@ Avoid:
 - “passionate junior developer”
 - “CEO / founder”
 - “AI-built developer”
+- “vibe-coding”
 - “I can build anything”
 - vague claims without proof
+- jargon in the direct client view
 
 Use instead:
 
@@ -85,3 +97,7 @@ Use instead:
 - “React / Next.js / Node.js developer”
 - “available for scoped fullstack features”
 - “focused on business applications, back-offices, dashboards, auth/RBAC”
+- “applications web métier”
+- “outils internes”
+- “espaces clients”
+- “tableaux de bord”
