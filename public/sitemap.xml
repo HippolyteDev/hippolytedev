@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://hippolytedev.fr/</loc></url>
-  <url><loc>https://hippolytedev.fr/socially.html</loc></url>
-  <url><loc>https://hippolytedev.fr/projects.html</loc></url>
-  <url><loc>https://hippolytedev.fr/workflow.html</loc></url>
-  <url><loc>https://hippolytedev.fr/contact.html</loc></url>
+  <url><loc>https://hippolytedev.fr/socially</loc></url>
+  <url><loc>https://hippolytedev.fr/projets</loc></url>
+  <url><loc>https://hippolytedev.fr/agence/workflow</loc></url>
+  <url><loc>https://hippolytedev.fr/methode</loc></url>
+  <url><loc>https://hippolytedev.fr/entreprise/offres</loc></url>
+  <url><loc>https://hippolytedev.fr/contact</loc></url>
+  <url><loc>https://hippolytedev.fr/confidentialite</loc></url>
 </urlset>

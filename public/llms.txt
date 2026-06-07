@@ -4,10 +4,12 @@ Portfolio de Hippolyte Diallo, développeur fullstack React / Next.js / Node ori
 
 Pages principales :
 - https://hippolytedev.fr/ — profil, positionnement et projets
-- https://hippolytedev.fr/socially.html — case study Socially
-- https://hippolytedev.fr/projects.html — projets sélectionnés
-- https://hippolytedev.fr/ia.html — méthode de travail avec l’IA
-- https://hippolytedev.fr/contact.html — contact
+- https://hippolytedev.fr/socially — preuve principale avec Socially
+- https://hippolytedev.fr/projets — projets sélectionnés
+- https://hippolytedev.fr/agence/workflow — workflow pour équipes tech, agences et ESN
+- https://hippolytedev.fr/methode — méthode de projet pour clients directs
+- https://hippolytedev.fr/entreprise/offres — offres pour TPE, PME, indépendants et associations
+- https://hippolytedev.fr/contact — contact
 
 Liens :
 - GitHub : https://github.com/HippolyteDev
