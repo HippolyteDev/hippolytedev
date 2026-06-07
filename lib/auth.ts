@@ -5,8 +5,22 @@ import { APIError } from "better-auth/api";
 import { prisma } from "@/lib/prisma";
 
 const adminEmail = process.env.ADMIN_EMAIL?.toLowerCase();
+const baseURL =
+  process.env.BETTER_AUTH_URL ?? (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
+const trustedOrigins = Array.from(
+  new Set(
+    [
+      baseURL,
+      "https://hippolytedev.fr",
+      "https://www.hippolytedev.fr",
+      process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined,
+    ].filter((origin): origin is string => Boolean(origin)),
+  ),
+);
 
 export const auth = betterAuth({
+  ...(baseURL ? { baseURL } : {}),
+  trustedOrigins,
   database: prismaAdapter(prisma, {
     provider: "postgresql",
   }),
