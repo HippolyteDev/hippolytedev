@@ -27,18 +27,19 @@ const offers = [
   },
   {
     title: "Outil interne simple",
-    forWho:
-      "TPE/PME qui gèrent encore une partie de leur activité avec Excel, papier, mails ou messages.",
+    forWho: "TPE/PME qui veulent remplacer un suivi manuel par un outil clair et centralisé.",
     solves:
-      "Informations dispersées, suivi difficile, ressaisies, erreurs ou manque de visibilité sur l’activité.",
+      "Informations dispersées, suivi difficile, ressaisies, oublis ou manque de visibilité sur l’activité.",
     deliverablesLabel: "Livrables",
     deliverables: [
+      "Formulaire de saisie",
       "Tableau de suivi",
-      "Formulaire",
-      "Espace d’administration",
-      "Gestion simple des données",
+      "Filtres et statuts",
+      "Espace admin simple",
+      "Gestion de données légère",
+      "Export simple",
       "Mise en ligne",
-      "Accompagnement d’utilisation",
+      "Prise en main",
     ],
     normalPrice: "3 500 € – 8 000 €",
     launchPrice: "2 100 € – 4 800 €",
@@ -47,19 +48,22 @@ const offers = [
   {
     title: "Application métier complète",
     forWho:
-      "Structures qui ont besoin d’un outil web plus avancé qu’un simple site ou tableau de suivi.",
+      "Structures qui ont besoin d’un outil web avec plusieurs utilisateurs, espaces privés ou processus métier spécifique.",
     solves:
-      "Besoin de gérer des utilisateurs, des données, des demandes, des statuts, des espaces privés ou des processus spécifiques à l’activité.",
+      "Besoin de gérer des comptes, des rôles, des dossiers, des validations, des documents, des notifications ou des workflows plus avancés.",
     deliverablesLabel: "Livrables possibles",
     deliverables: [
-      "Espace client ou espace privé",
       "Comptes utilisateurs",
-      "Backoffice d’administration",
-      "Tableau de bord",
-      "Gestion de demandes ou dossiers",
+      "Espace client ou espace privé",
       "Rôles et permissions",
-      "Formulaires avancés",
-      "Exports ou suivi de données",
+      "Backoffice complet",
+      "Gestion de dossiers",
+      "Workflow de validation",
+      "Notifications",
+      "Historique des actions",
+      "Documents ou fichiers",
+      "Exports avancés",
+      "Intégrations simples",
     ],
     normalPrice: "À partir de 10 000 €",
     launchPrice: "À partir de 6 000 €",
@@ -153,7 +157,6 @@ export default function OffersPage() {
                   <span className="badge launch-badge">-40 % lancement</span>
                   <h3 className="h3">{offer.title}</h3>
                 </div>
-?
                 <div className="offer-copy">
                   <div>
                     <strong>Pour qui</strong>
@@ -164,7 +167,6 @@ export default function OffersPage() {
                     <p>{offer.solves}</p>
                   </div>
                 </div>
-
                 <div>
                   <strong className="offer-label">{offer.deliverablesLabel}</strong>
                   <ul className="offer-check-list">
@@ -173,12 +175,10 @@ export default function OffersPage() {
                     ))}
                   </ul>
                 </div>
-
                 <div className="offer-price">
                   <span className="old-price">{offer.normalPrice}</span>
                   <strong>{offer.launchPrice}</strong>
                 </div>
-
                 <Link
                   href="/contact"
                   className="button button-primary"
@@ -189,6 +189,11 @@ export default function OffersPage() {
               </article>
             ))}
           </div>
+          <p className="offers-clarification text-muted">
+            L’outil interne sert à centraliser et suivre une activité simple. L’application métier
+            va plus loin : elle gère plusieurs utilisateurs, des rôles, des espaces privés, des
+            workflows et des données plus complexes.
+          </p>
         </div>
       </section>
 

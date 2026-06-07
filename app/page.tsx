@@ -95,9 +95,9 @@ export default function HomePage() {
                 gagner du temps.
               </h1>
               <p className="lead">
-                Si votre activité dépend encore de tableurs, mails, messages ou tâches répétitives,
-                je vous aide à créer une solution web claire, cadrée et simple à utiliser au
-                quotidien.
+                Que ce soit pour gagner en visibilité ou mieux organiser votre activité, je vous
+                aide à transformer un besoin concret en solution web claire, cadrée et simple à
+                utiliser.
               </p>
               <div className="cta-row">
                 <Link

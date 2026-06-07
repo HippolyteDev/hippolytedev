@@ -112,7 +112,11 @@ export default function MethodPage() {
               cadrée et simple à comprendre.
             </p>
             <div className="cta-row">
-              <Link href="/contact" className="button button-primary" data-track="click_method_hero_contact">
+              <Link
+                href="/contact"
+                className="button button-primary"
+                data-track="click_method_hero_contact"
+              >
                 Parler de mon projet
               </Link>
               <Link
@@ -127,7 +131,7 @@ export default function MethodPage() {
 
           <aside className="method-panel" aria-label="Ce que permet le premier échange">
             <span className="badge badge-success">Premier échange sans engagement</span>
-            <h2 className="h3">On part de votre réalité, pas d’un modèle tout fait.</h2>
+            <h2 className="h3">On clarifie le besoin avant de construire.</h2>
             <div className="method-panel-list">
               <div className="method-panel-row">
                 <span>01</span>
@@ -149,9 +153,7 @@ export default function MethodPage() {
               </div>
               <div className="method-panel-row">
                 <span>04</span>
-                <p>
-                  Cadrer le périmètre : livrables, prix, délais, limites et accompagnement.
-                </p>
+                <p>Cadrer le périmètre : livrables, prix, délais, limites et accompagnement.</p>
               </div>
             </div>
             <div className="method-panel-result">
@@ -162,31 +164,6 @@ export default function MethodPage() {
               </p>
             </div>
           </aside>
-        </div>
-      </section>
-
-      <section className="section-sm">
-        <div className="container grid-3 method-promise-grid">
-          <article className="card">
-            <h2 className="h3">Simple à suivre</h2>
-            <p className="text-muted">
-              Vous savez à chaque étape ce qui est prévu, ce qui est en cours et ce qui reste à
-              valider.
-            </p>
-          </article>
-          <article className="card">
-            <h2 className="h3">Cadré avant de commencer</h2>
-            <p className="text-muted">
-              Le prix, les délais, le périmètre et les limites sont posés avant le développement.
-            </p>
-          </article>
-          <article className="card">
-            <h2 className="h3">Adapté à votre budget</h2>
-            <p className="text-muted">
-              Je cherche la solution la plus utile pour votre situation, pas la plus lourde à
-              vendre.
-            </p>
-          </article>
         </div>
       </section>
 
@@ -229,7 +206,11 @@ export default function MethodPage() {
               pertinente.
             </p>
             <div className="cta-row">
-              <Link href="/contact" className="button button-primary" data-track="click_method_contact">
+              <Link
+                href="/contact"
+                className="button button-primary"
+                data-track="click_method_contact"
+              >
                 Parler de mon projet
               </Link>
               <Link

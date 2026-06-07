@@ -22,7 +22,7 @@ export default function ContactPage() {
           </h1>
           <p className="lead">
             <AudienceText
-              agency="Contact simple : email, LinkedIn ou GitHub. Je réponds plus facilement aux demandes cadrées avec contexte, stack, objectif et type de feature."
+              agency="Contact simple : email, LinkedIn ou GitHub. Présentez-moi le contexte de votre besoin et je vous répondrai avec les prochaines étapes possibles."
               direct="Envoyez-moi le contexte, le problème à résoudre et ce que vous aimeriez obtenir en première version. Si le besoin est encore flou, le premier échange servira justement à le clarifier."
             />
           </p>
