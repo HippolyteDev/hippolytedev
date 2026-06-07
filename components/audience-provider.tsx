@@ -172,10 +172,12 @@ function AudienceModal({ onSelect }: { onSelect: (mode: AudienceMode) => void })
       >
         <p className="eyebrow">Choix de lecture</p>
         <h1 id="audience-modal-title" className="h2">
-          Vous venez plutôt pour travailler avec moi dans une équipe tech ou pour un projet
-          d’entreprise ?
+          Quel contexte correspond le mieux à votre besoin ?
         </h1>
-        <p className="lead">Le contenu s’adapte à votre contexte.</p>
+        <p className="lead">
+          Choisissez la lecture la plus adaptée pour afficher un contenu clair : profil technique
+          pour une équipe, ou solutions web pour une structure qui souhaite concrétiser un projet.
+        </p>
         <div className="audience-choice-grid">
           <button className="card card-hover audience-choice" onClick={() => onSelect("agency")}>
             <span className="badge">Équipe tech</span>
@@ -186,11 +188,11 @@ function AudienceModal({ onSelect }: { onSelect: (mode: AudienceMode) => void })
             </span>
           </button>
           <button className="card card-hover audience-choice" onClick={() => onSelect("direct")}>
-            <span className="badge">Client direct</span>
-            <strong>Entreprise, indépendant ou petite équipe avec un besoin concret</strong>
+            <span className="badge">Entreprise</span>
+            <strong>TPE, PME, indépendant ou association avec un projet web</strong>
             <span className="text-muted">
-              Lecture simple: problèmes métier, outils internes, espace client, automatisation et
-              étapes de projet.
+              Lecture orientée besoin métier : site professionnel, outil interne, espace privé,
+              tableau de bord ou application sur mesure.
             </span>
           </button>
         </div>
