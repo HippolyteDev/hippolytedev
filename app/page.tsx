@@ -2,6 +2,129 @@ import Link from "next/link";
 import { AudienceText } from "@/components/audience-provider";
 import { Icon } from "@/components/icon";
 
+const integrationCategories = [
+  {
+    title: "Gestion & suivi",
+    description: "Pour mieux organiser les demandes, dossiers, clients ou tâches du quotidien.",
+    features: [
+      "Formulaires de demande",
+      "Tableaux de suivi",
+      "Statuts personnalisés",
+      "Recherche et filtres",
+      "Exports de données",
+      "Notes internes",
+    ],
+    icon: (
+      <>
+        <path d="M8 6h13" />
+        <path d="M8 12h13" />
+        <path d="M8 18h13" />
+        <path d="M3 6h.01" />
+        <path d="M3 12h.01" />
+        <path d="M3 18h.01" />
+      </>
+    ),
+  },
+  {
+    title: "Espace privé & utilisateurs",
+    description: "Pour donner un accès adapté à vos clients, votre équipe ou vos partenaires.",
+    features: [
+      "Comptes utilisateurs",
+      "Espace client",
+      "Espace équipe",
+      "Rôles et permissions",
+      "Accès sécurisés",
+      "Historique des actions",
+    ],
+    icon: (
+      <>
+        <circle cx="9" cy="8" r="4" />
+        <path d="M2 21a7 7 0 0 1 14 0" />
+        <path d="M17 11l2 2 4-4" />
+      </>
+    ),
+  },
+  {
+    title: "Administration & données",
+    description: "Pour gérer vos contenus, informations et dossiers depuis une interface simple.",
+    features: [
+      "Espace d’administration",
+      "Backoffice complet",
+      "Gestion de contenus",
+      "Gestion de dossiers",
+      "Gestion de fichiers",
+      "Tableaux de bord",
+    ],
+    icon: (
+      <>
+        <rect x="3" y="4" width="18" height="16" rx="2" />
+        <path d="M3 10h18" />
+        <path d="M9 20V10" />
+      </>
+    ),
+  },
+  {
+    title: "Automatisation & communication",
+    description:
+      "Pour réduire les actions répétitives et mieux communiquer avec vos utilisateurs.",
+    features: [
+      "Emails automatiques",
+      "Notifications",
+      "Relances",
+      "Messagerie interne",
+      "Intégration IA",
+      "Connexion à des outils externes",
+    ],
+    icon: (
+      <>
+        <path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" />
+        <path d="M8 9h8" />
+        <path d="M8 13h5" />
+      </>
+    ),
+  },
+  {
+    title: "Visibilité & croissance",
+    description:
+      "Pour présenter votre activité, générer plus de demandes et mieux comprendre vos résultats.",
+    features: [
+      "Site professionnel",
+      "Pages de services",
+      "SEO de base",
+      "Tracking / statistiques",
+      "Multilingue",
+      "Paiement en ligne",
+    ],
+    icon: (
+      <>
+        <path d="M3 12h18" />
+        <path d="M12 3a15 15 0 0 1 0 18" />
+        <path d="M12 3a15 15 0 0 0 0 18" />
+        <circle cx="12" cy="12" r="9" />
+      </>
+    ),
+  },
+  {
+    title: "Fiabilité & conformité",
+    description:
+      "Pour livrer une solution plus sérieuse, maintenable et adaptée aux données traitées.",
+    features: [
+      "Sécurité des accès",
+      "RGPD / données personnelles",
+      "Tests",
+      "Mise en ligne",
+      "Maintenance légère",
+      "Documentation / prise en main",
+    ],
+    icon: (
+      <>
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+        <path d="m9 12 2 2 4-4" />
+      </>
+    ),
+  },
+];
+
 export default function HomePage() {
   return (
     <main>
@@ -200,6 +323,63 @@ export default function HomePage() {
                 />
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section integration-section">
+        <div className="container">
+          <div className="integration-head">
+            <p className="eyebrow">Briques utiles</p>
+            <h2 className="h2">Ce que je peux intégrer à votre projet</h2>
+            <p className="lead">
+              Chaque projet n’a pas besoin de tout. L’objectif est de sélectionner uniquement les
+              briques utiles pour résoudre votre problème : mieux présenter votre activité,
+              centraliser vos informations, suivre vos demandes ou créer un espace privé.
+            </p>
+          </div>
+
+          <div className="integration-grid">
+            {integrationCategories.map((category) => (
+              <article className="card integration-card" key={category.title}>
+                <Icon>{category.icon}</Icon>
+                <h3 className="h3">{category.title}</h3>
+                <p className="text-muted">{category.description}</p>
+                <ul className="integration-feature-list">
+                  {category.features.map((feature) => (
+                    <li key={feature}>{feature}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+
+          <div className="integration-note">
+            <div>
+              <p className="eyebrow">Cadrage</p>
+              <h3 className="h3">Tout n’est pas nécessaire dès le départ</h3>
+              <p className="text-muted">
+                Ces fonctionnalités sont choisies selon votre besoin réel, votre budget et le niveau
+                de complexité utile. Le but n’est pas d’ajouter des options inutiles, mais de
+                construire une solution claire, cadrée et réellement utilisable.
+              </p>
+            </div>
+            <div className="cta-row">
+              <Link
+                href="/contact"
+                className="button button-primary"
+                data-track="click_integrations_contact"
+              >
+                Parler de mon besoin
+              </Link>
+              <Link
+                href="/entreprise/offres"
+                className="button button-secondary"
+                data-track="click_integrations_offers"
+              >
+                Voir les offres
+              </Link>
+            </div>
           </div>
         </div>
       </section>
