@@ -8,13 +8,13 @@ import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://hippolytedev.fr"),
-  title: "HippolyteDev — Fullstack React / Next.js / Node",
+  title: "HippolyteDev — Outils internes et applications web pour entreprises",
   description:
-    "Développeur fullstack React / Next.js / Node orienté applications métier, back-offices, dashboards, auth/RBAC, APIs et produits web complets.",
+    "Création d’applications web sur mesure pour TPE/PME : outils internes, espaces clients, tableaux de bord, suivi de demandes et automatisation.",
   openGraph: {
-    title: "HippolyteDev — Fullstack React / Next.js / Node",
+    title: "HippolyteDev — Outils internes et applications web pour entreprises",
     description:
-      "Applications métier, back-offices, dashboards, auth/RBAC, APIs et features fullstack cadrées.",
+      "Applications web sur mesure pour centraliser les données, suivre les demandes et mieux organiser l’activité d’une entreprise.",
     type: "website",
     url: "https://hippolytedev.fr/",
   },
