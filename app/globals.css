@@ -429,15 +429,21 @@ button.card {
 }
 
 .nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(190px, 1fr) auto minmax(420px, 1fr);
   align-items: center;
-  justify-content: space-between;
+  gap: 24px;
   min-height: 72px;
+}
+
+.site-header .container.nav {
+  width: min(100% - 40px, 1540px);
 }
 
 .logo {
   display: inline-flex;
   align-items: center;
+  justify-self: start;
   gap: 10px;
   min-width: max-content;
   color: var(--color-text);
@@ -472,6 +478,7 @@ button.card {
 .nav-links {
   display: flex;
   align-items: center;
+  justify-self: center;
   gap: 24px;
   color: var(--color-muted);
   font-size: 14px;
@@ -673,6 +680,7 @@ button.card {
   }
 
   .nav {
+    display: flex;
     min-height: 64px;
   }
 
@@ -890,6 +898,7 @@ button.card {
 .nav-actions {
   display: inline-flex;
   align-items: center;
+  justify-self: end;
   gap: 12px;
   min-width: max-content;
 }

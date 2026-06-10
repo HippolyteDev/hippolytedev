@@ -25,6 +25,7 @@ const directNavItems: NavItem[] = [
   { href: "/", label: "Accueil" },
   { href: "/methode", label: "Méthode" },
   { href: "/entreprise/offres", label: "Offres", badge: "Lancement -40 %" },
+  { href: "/projets", label: "Réalisations" },
   { href: "/contact", label: "Contact" },
 ];
 
