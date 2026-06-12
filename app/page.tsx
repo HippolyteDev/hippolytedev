@@ -65,8 +65,7 @@ const integrationCategories = [
   },
   {
     title: "Automatisation & communication",
-    description:
-      "Pour réduire les actions répétitives et mieux communiquer avec vos utilisateurs.",
+    description: "Pour réduire les actions répétitives et mieux communiquer avec vos utilisateurs.",
     features: [
       "Emails automatiques",
       "Notifications",
@@ -212,8 +211,7 @@ export default function HomePage() {
             <div className="container direct-centered-hero-inner">
               <p className="eyebrow">Solutions web pour TPE/PME</p>
               <h1 className="h1">
-                Des outils web sur mesure pour centraliser vos données, suivre vos demandes et
-                gagner du temps.
+                Centralisez vos données et pilotez votre activité avec un outil web sur-mesure.
               </h1>
               <p className="lead">
                 Que ce soit pour gagner en visibilité ou mieux organiser votre activité, je vous
