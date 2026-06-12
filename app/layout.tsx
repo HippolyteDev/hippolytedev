@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import "./globals.css";
 import { AnalyticsTracker } from "@/components/analytics-tracker";
 import { AudienceProvider } from "@/components/audience-provider";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr">
       <body>
         <AudienceProvider>
+          <ScrollReveal />
           <Suspense fallback={null}>
             <AnalyticsTracker />
           </Suspense>

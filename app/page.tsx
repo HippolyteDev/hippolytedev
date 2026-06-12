@@ -325,62 +325,67 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section integration-section">
-        <div className="container">
-          <div className="integration-head">
-            <p className="eyebrow">Briques utiles</p>
-            <h2 className="h2">Ce que je peux intégrer à votre projet</h2>
-            <p className="lead">
-              Chaque projet n’a pas besoin de tout. L’objectif est de sélectionner uniquement les
-              briques utiles pour résoudre votre problème : mieux présenter votre activité,
-              centraliser vos informations, suivre vos demandes ou créer un espace privé.
-            </p>
-          </div>
+      <AudienceText
+        agency={null}
+        direct={
+          <section className="section integration-section">
+            <div className="container">
+              <div className="integration-head">
+                <p className="eyebrow">Briques utiles</p>
+                <h2 className="h2">Ce que je peux intégrer à votre projet</h2>
+                <p className="lead">
+                  Chaque projet n’a pas besoin de tout. L’objectif est de sélectionner uniquement les
+                  briques utiles pour résoudre votre problème : mieux présenter votre activité,
+                  centraliser vos informations, suivre vos demandes ou créer un espace privé.
+                </p>
+              </div>
 
-          <div className="integration-grid">
-            {integrationCategories.map((category) => (
-              <article className="card integration-card" key={category.title}>
-                <Icon>{category.icon}</Icon>
-                <h3 className="h3">{category.title}</h3>
-                <p className="text-muted">{category.description}</p>
-                <ul className="integration-feature-list">
-                  {category.features.map((feature) => (
-                    <li key={feature}>{feature}</li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
+              <div className="integration-grid">
+                {integrationCategories.map((category) => (
+                  <article className="card integration-card" key={category.title}>
+                    <Icon>{category.icon}</Icon>
+                    <h3 className="h3">{category.title}</h3>
+                    <p className="text-muted">{category.description}</p>
+                    <ul className="integration-feature-list">
+                      {category.features.map((feature) => (
+                        <li key={feature}>{feature}</li>
+                      ))}
+                    </ul>
+                  </article>
+                ))}
+              </div>
 
-          <div className="integration-note">
-            <div>
-              <p className="eyebrow">Cadrage</p>
-              <h3 className="h3">Tout n’est pas nécessaire dès le départ</h3>
-              <p className="text-muted">
-                Ces fonctionnalités sont choisies selon votre besoin réel, votre budget et le niveau
-                de complexité utile. Le but n’est pas d’ajouter des options inutiles, mais de
-                construire une solution claire, cadrée et réellement utilisable.
-              </p>
+              <div className="integration-note">
+                <div>
+                  <p className="eyebrow">Cadrage</p>
+                  <h3 className="h3">Tout n’est pas nécessaire dès le départ</h3>
+                  <p className="text-muted">
+                    Ces fonctionnalités sont choisies selon votre besoin réel, votre budget et le
+                    niveau de complexité utile. Le but n’est pas d’ajouter des options inutiles, mais
+                    de construire une solution claire, cadrée et réellement utilisable.
+                  </p>
+                </div>
+                <div className="cta-row">
+                  <Link
+                    href="/contact"
+                    className="button button-primary"
+                    data-track="click_integrations_contact"
+                  >
+                    Parler de mon besoin
+                  </Link>
+                  <Link
+                    href="/entreprise/offres"
+                    className="button button-secondary"
+                    data-track="click_integrations_offers"
+                  >
+                    Voir les offres
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="cta-row">
-              <Link
-                href="/contact"
-                className="button button-primary"
-                data-track="click_integrations_contact"
-              >
-                Parler de mon besoin
-              </Link>
-              <Link
-                href="/entreprise/offres"
-                className="button button-secondary"
-                data-track="click_integrations_offers"
-              >
-                Voir les offres
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        }
+      />
 
       <section className="section project-showcase-dark">
         <div className="container grid-2">
