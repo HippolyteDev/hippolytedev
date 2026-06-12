@@ -209,7 +209,7 @@ export default function HomePage() {
         direct={
           <section className="hero direct-centered-hero">
             <div className="container direct-centered-hero-inner">
-              <p className="eyebrow">Solutions web pour TPE/PME</p>
+              <p className="eyebrow">Solutions web pour entreprises et structures indépendantes</p>
               <h1 className="h1">
                 Centralisez vos données et pilotez votre activité avec un outil web sur-mesure.
               </h1>
