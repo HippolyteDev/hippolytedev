@@ -1,7 +1,9 @@
 HippolyteDev
-Développeur fullstack React / Next.js / Node
+Hippolyte Diallo
+Développeur web freelance à Lyon
 
-Portfolio Next.js orienté applications métier, back-offices, dashboards, auth, RBAC, APIs et features produit.
+Portfolio Next.js sous le nom HippolyteDev, orienté sites professionnels, outils internes, applications web sur mesure, back-offices, dashboards et features produit.
 Contact : hippolyte.devweb@gmail.com
 GitHub : https://github.com/HippolyteDev
 LinkedIn : https://www.linkedin.com/in/hippolyte-diallo-6bbbba3a1/
+Malt : https://www.malt.fr/profile/hippolytediallo

@@ -73,6 +73,9 @@ export function SiteFooter() {
           <p className="text-muted">
             <Link href="/confidentialite">Confidentialité</Link>
           </p>
+          <p className="text-muted">
+            <Link href="/a-propos">À propos de Hippolyte Diallo</Link>
+          </p>
         </div>
       </div>
     </footer>
