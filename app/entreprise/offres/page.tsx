@@ -112,6 +112,11 @@ const offerFaqs = [
       "Si votre projet demande une très grande équipe, plusieurs expertises en parallèle ou une organisation lourde, je vous le dirai clairement. Mais pour un projet contenu, cadré et utile à votre activité, travailler avec un freelance permet d’avancer plus directement : moins d’intermédiaires, des décisions plus rapides et une personne responsable du projet de bout en bout.",
   },
   {
+    question: "Un développeur solo peut-il vraiment gérer un projet complet ?",
+    answer:
+      "Oui, si le projet est bien cadré. Un développeur solo peut prendre en charge un projet complet : compréhension du besoin, réflexion fonctionnelle, conception des écrans, développement, base de données, mise en ligne, suivi et maintenance légère. L’avantage est d’avoir un interlocuteur unique qui comprend l’ensemble du projet et garde une vision cohérente du besoin. En 2026, les outils modernes permettent à un développeur bien organisé de construire seul des solutions web complètes et sérieuses. En revanche, si le projet demande une équipe dédiée, plusieurs expertises en parallèle ou une très forte charge de production, je le signale dès le départ. Mon objectif est de proposer une solution réaliste, maintenable et adaptée à votre situation.",
+  },
+  {
     question: "Vous faites uniquement des petits projets ?",
     answer:
       "Non. Mes offres actuelles sont pensées pour des petites structures et des besoins bien cadrés, mais je peux aussi construire des applications plus complètes. Socially, mon projet principal, montre par exemple une application web avec comptes utilisateurs, contenus, messages, notifications, réglages et logique de données.",
