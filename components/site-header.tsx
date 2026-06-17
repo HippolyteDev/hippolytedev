@@ -33,7 +33,7 @@ export function SiteHeader() {
   const pathname = usePathname();
   const { mode, selectedMode, toggleMode } = useAudience();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navItems = mode === "direct" ? directNavItems : agencyNavItems;
+  const navItems = mode === "agency" ? agencyNavItems : directNavItems;
 
   if (pathname.startsWith("/admin")) {
     return null;

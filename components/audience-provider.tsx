@@ -179,20 +179,20 @@ function AudienceModal({ onSelect }: { onSelect: (mode: AudienceMode) => void })
           pour une équipe, ou solutions web pour une structure qui souhaite concrétiser un projet.
         </p>
         <div className="audience-choice-grid">
-          <button className="card card-hover audience-choice" onClick={() => onSelect("agency")}>
-            <span className="badge">Équipe tech</span>
-            <strong>Agence, ESN, studio, recruteur ou équipe produit</strong>
-            <span className="text-muted">
-              Lecture technique: stack, méthode, codebase, auth, données, qualité et preuves de
-              livraison.
-            </span>
-          </button>
           <button className="card card-hover audience-choice" onClick={() => onSelect("direct")}>
             <span className="badge">Entreprise</span>
             <strong>TPE, PME, indépendant ou association avec un projet web</strong>
             <span className="text-muted">
               Lecture orientée besoin métier : site professionnel, outil interne, espace privé,
               tableau de bord ou application sur mesure.
+            </span>
+          </button>
+          <button className="card card-hover audience-choice" onClick={() => onSelect("agency")}>
+            <span className="badge">Équipe tech</span>
+            <strong>Agence, ESN, studio, recruteur ou équipe produit</strong>
+            <span className="text-muted">
+              Lecture technique: stack, méthode, codebase, auth, données, qualité et preuves de
+              livraison.
             </span>
           </button>
         </div>
@@ -217,7 +217,7 @@ export function AudienceText({
   direct: React.ReactNode;
 }) {
   const { mode } = useAudience();
-  return <>{mode === "direct" ? direct : agency}</>;
+  return <>{mode === "agency" ? agency : direct}</>;
 }
 
 export function AudienceLink({
@@ -235,13 +235,13 @@ export function AudienceLink({
   const { mode } = useAudience();
 
   return (
-    <Link href={mode === "direct" ? directHref : agencyHref} {...props}>
-      {mode === "direct" ? direct : agency}
+    <Link href={mode === "agency" ? agencyHref : directHref} {...props}>
+      {mode === "agency" ? agency : direct}
     </Link>
   );
 }
 
 export function useAudienceLabel() {
   const { mode } = useAudience();
-  return mode ? audienceLabels[mode] : "vue à choisir";
+  return mode ? audienceLabels[mode] : audienceLabels.direct;
 }
