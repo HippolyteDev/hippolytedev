@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { OfferFaqAccordion } from "@/components/offer-faq-accordion";
 
 export const metadata: Metadata = {
   title: "Offres entreprise — HippolyteDev",
@@ -92,6 +93,34 @@ const priceFactors = [
   "Urgence",
   "Support demandé",
   "Niveau de responsabilité du projet",
+];
+
+const offerFaqs = [
+  {
+    question: "Pourquoi ne pas plutôt implémenter un agent IA ?",
+    answer:
+      "Un agent IA no-code peut être utile pour automatiser une tâche simple : trier des emails, résumer une demande ou déclencher une action. Mais pour un outil métier complet, il faut souvent plus qu’un workflow automatisé : base de données, droits utilisateurs, historique, reporting, audit, logique métier et interfaces adaptées. Mon approche consiste à intégrer l’IA directement dans une application sur mesure quand elle apporte une vraie valeur, afin de garder le contrôle, la fiabilité et l’adaptation précise à votre fonctionnement.",
+  },
+  {
+    question: "Pourquoi les coûts sont aussi faibles ?",
+    answer:
+      "Parce que vous travaillez directement avec moi, sans intermédiaire, équipe commerciale ou frais de structure d’agence. Je suis seul sur le cadrage, la conception, le développement et la livraison. Les tarifs de lancement sont aussi volontairement réduits pour construire mes premières références clients, sans transformer la prestation en projet low-cost.",
+  },
+  {
+    question: "Pourquoi vous plutôt qu’une agence ?",
+    answer:
+      "Si votre projet demande une très grande équipe, plusieurs expertises en parallèle ou une organisation lourde, je vous le dirai clairement. Mais pour un projet contenu, cadré et utile à votre activité, travailler avec un freelance permet d’avancer plus directement : moins d’intermédiaires, des décisions plus rapides et une personne responsable du projet de bout en bout.",
+  },
+  {
+    question: "Vous faites uniquement des petits projets ?",
+    answer:
+      "Non. Mes offres actuelles sont pensées pour des petites structures et des besoins bien cadrés, mais je peux aussi construire des applications plus complètes. Socially, mon projet principal, montre par exemple une application web avec comptes utilisateurs, contenus, messages, notifications, réglages et logique de données.",
+  },
+  {
+    question: "Les prix affichés sont-ils fixes ?",
+    answer:
+      "Ce sont des repères. Le prix dépend du périmètre, du nombre d’écrans, des données à gérer et des fonctionnalités nécessaires.",
+  },
 ];
 
 export default function OffersPage() {
@@ -194,6 +223,21 @@ export default function OffersPage() {
             va plus loin : elle gère plusieurs utilisateurs, des rôles, des espaces privés, des
             workflows et des données plus complexes.
           </p>
+        </div>
+      </section>
+
+      <section className="section-sm offer-faq-section">
+        <div className="container offer-faq-layout">
+          <div className="offer-faq-intro">
+            <p className="eyebrow">Questions fréquentes</p>
+            <h2 className="h2">Les points à clarifier avant de se lancer.</h2>
+            <p className="lead">
+              Ces réponses servent à comprendre si mon approche correspond à votre situation, avant
+              de demander un devis ou de prendre rendez-vous.
+            </p>
+          </div>
+
+          <OfferFaqAccordion items={offerFaqs} />
         </div>
       </section>
 
