@@ -1098,7 +1098,7 @@ button.card {
 .audience-choice {
   display: grid;
   gap: 14px;
-  min-height: 210px;
+  min-height: 190px;
   text-align: left;
 }
 
@@ -1106,6 +1106,29 @@ button.card {
   color: var(--color-text);
   font-size: 20px;
   line-height: 1.25;
+}
+
+.audience-choice-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: auto;
+  border-radius: 12px;
+  background: var(--color-primary);
+  padding: 10px 14px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1;
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.audience-choice:hover .audience-choice-cta {
+  background: var(--color-primary-hover);
+  transform: translateY(-1px);
 }
 
 .audience-loading {

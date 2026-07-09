@@ -170,30 +170,32 @@ function AudienceModal({ onSelect }: { onSelect: (mode: AudienceMode) => void })
         aria-modal="true"
         aria-labelledby="audience-modal-title"
       >
-        <p className="eyebrow">Choix de lecture</p>
+        <p className="eyebrow">Choix de vue</p>
         <h1 id="audience-modal-title" className="h2">
-          Quel contexte correspond le mieux à votre besoin ?
+          Quelle vue voulez-vous afficher ?
         </h1>
         <p className="lead">
-          Choisissez la lecture la plus adaptée pour afficher un contenu clair : profil technique
-          pour une équipe, ou solutions web pour une structure qui souhaite concrétiser un projet.
+          Le contenu du site s’adapte selon votre contexte. Vous pourrez changer de vue ensuite
+          depuis le header.
         </p>
         <div className="audience-choice-grid">
           <button className="card card-hover audience-choice" onClick={() => onSelect("direct")}>
-            <span className="badge">Entreprise</span>
-            <strong>TPE, PME, indépendant ou association avec un projet web</strong>
+            <span className="badge">Vue entreprise</span>
+            <strong>Pour créer un site, un outil interne ou une application web</strong>
             <span className="text-muted">
-              Lecture orientée besoin métier : site professionnel, outil interne, espace privé,
-              tableau de bord ou application sur mesure.
+              Pour TPE, PME, indépendants, associations ou porteurs de projet qui veulent une
+              solution claire et concrète.
             </span>
+            <span className="audience-choice-cta">Voir la vue entreprise</span>
           </button>
           <button className="card card-hover audience-choice" onClick={() => onSelect("agency")}>
-            <span className="badge">Équipe tech</span>
-            <strong>Agence, ESN, studio, recruteur ou équipe produit</strong>
+            <span className="badge">Vue équipe tech</span>
+            <strong>Pour évaluer mon profil technique et mes projets</strong>
             <span className="text-muted">
-              Lecture technique: stack, méthode, codebase, auth, données, qualité et preuves de
-              livraison.
+              Pour agences, ESN, studios, recruteurs ou équipes produit qui veulent une lecture plus
+              technique.
             </span>
+            <span className="audience-choice-cta">Voir la vue équipe tech</span>
           </button>
         </div>
       </section>
